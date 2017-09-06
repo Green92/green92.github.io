@@ -5,22 +5,109 @@
 		<title>Tacita</title>
 		<style type="text/css">
 
-			.hello {
-				color: red;
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background-color: #000
+			}
+
+			.all {
+				max-width: 800px;
+				margin: auto;
+				height: 100vh;
+				background-color: #FFFFFF;
+			}
+
+			.messageList {
+				list-style: none;
+				height: 90vh;
+				text-align: center;
+				overflow: auto;
+			}
+
+			.messageList .message {
+				display: inline-block;
+				font-size: medium;
+				clear: both;
+				background-color: #0084ff;
+				color: #EEE;
+				font-family: Helvetica, Arial, sans-serif;
+				padding: 5px;
+				border-radius: 12px;
+				margin: 10px;
+			}
+
+			.messageList .messageCenter {
+				border-radius: 0;
+				color: #000;
+				border: 1px solid black;
+				background-color: #FFF;
+				margin-right: 10px;
+				margin-left: 10px;
+				padding: 10px;
+				padding: 10px;
+				text-align: justify;
+			}
+
+			.messageList .messageRight {
+				float: right;
+			}
+
+			.messageList .messageLeft {
+				background-color: #f1f0f0;
+				color: #000;
+				float: left;
+			}
+
+			.input {
+				height: 10vh;
+				background-color: #E0E0E0;
+			}
+
+			.input textarea {
+				width: 80%;
+				height: 100%;
+			}
+
+			.input .mini {
+				width: 80px;
+				height: 80px;
+				margin-left: 25px;
 			}
 
 		</style>
+		<script type="text/javascript" language="Javascript" src="js/ui.js"></script>
 		<script type="text/javascript" language="Javascript">
 
 			window.onload = function() {
-				var titre = document.getElementById("Titre");
-				titre.innerHTML = "Hello world";
-				titre.className += "hello";
+				
 			}
 
 		</script>
 	</head>
 	<body>
-		<h1 id="Titre"></h1>
+		<main class="all">
+			<ul class="messageList">
+				<li class="message messageCenter">
+					Par une froide journée d'hiver, Octave se rendait à l'ancien opéra. Il aimait se rendre dans ce lieu qu'il avait tant fréquenté dans sa jeunesse... Alors qu'il traversait sa propre rue, il bouscula un enfant.
+				</li>
+				<li class="message messageCenter">L'enfant poussa un cri : </br>- Aiiie</li>
+				<li class="message messageCenter">
+					Au tout début, octave ne fit pas attention. C'est seulement après 2 secondes qu'il stoppa sa route et se retourna, regardant l'enfant d'un air très grave.
+				</li>
+				<li class="message messageRight">Tu peux parler ?</li>
+				<li class="message messageRight">Petit, reviens !</li>
+				<li class="message messageLeft">Inconnu 1 (mineur) : Laissez-moi tranquille. Je n'ai pas le droit de parler aux inconnus.</li>
+				<li class="message messageCenter">Tous les deux s'arrêtèrent. Les gens autour d'eux, également troublés par le cri de l'enfant les fixaient avec un air désabusés. Certains d'entre, avait un air appeurés. Il était interdit de communiquer verbalement pour les personnes disposant encore de cordes vocales fonctionnelles. Tacita écoutait chaque rue, chaque maison pour s'assurer du respect de cette lois. Les agents de répression allaient arriver d'une minute à l'autre. Certaines personnes avait déjà commencé à courir. Octave n'avait pas beaucoup de temps. Il lui fallait fuire également. Mais qu'allait-il advenir de l'enfant ? Octave n'avait pas beaucoup de temp pour réagir. devait-il aider cet enfant ou fuire ?</li>
+				<li class="message messageCenter">Tous les deux s'arrêtèrent. Les gens autour d'eux, également troublés par le cri de l'enfant les fixaient avec un air désabusés. Certains d'entre, avait un air appeurés. Il était interdit de communiquer verbalement pour les personnes disposant encore de cordes vocales fonctionnelles. Tacita écoutait chaque rue, chaque maison pour s'assurer du respect de cette lois. Les agents de répression allaient arriver d'une minute à l'autre. Certaines personnes avait déjà commencé à courir. Octave n'avait pas beaucoup de temps. Il lui fallait fuire également. Mais qu'allait-il advenir de l'enfant ? Octave n'avait pas beaucoup de temp pour réagir. devait-il aider cet enfant ou fuire ?</li>
+			</ul>
+			<section class="input">
+				<textarea class="messageInput" id="textZone"></textarea>
+				<img class="mini" src="img/send.png"/>
+			</section>
+		</main>
 	</body>
 </html>
