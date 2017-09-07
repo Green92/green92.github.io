@@ -6,11 +6,12 @@ window.onload = function()
 {
 	var hasMessageToDisplay = true;
 
-	var Message = function(id, sender, content, options) 
+	var Message = function(id, sender, content, displayType, options) 
 	{		
 		this.id = id;
 		this.sender = sender;
 		this.content = content;
+		this.displayType = displayType;
 		this.options = options;			
 	};
 
@@ -22,7 +23,7 @@ window.onload = function()
 	function game()
 	{
 		var isGameFinished = false;
-		var nodeID = 1;
+		var nodeID = 0;
 
 		//loadJSONfile();
 
@@ -33,12 +34,12 @@ window.onload = function()
 			{
 				var message = getMessage(nodeID);
 
-				alert(message);
 				//ui.postMessage(message.sender, message.content);
 
 				// TEST
 					document.getElementById("sender").innerHTML = message.sender;
-					document.getElementById("content").innerHTML = message.content + "<br/><br/>" + message.options[0].textToDisplay + "<br/>" + message.options[1].textToDisplay;
+					document.getElementById("content").innerHTML = message.content ;
+					document.getElementById("options").innerHTML = message.options[0].textToDisplay + "<br/>" + ((message.length > 1 ) ? message.options[1].textToDisplay : "");
 
 				//ui.createOptions(message.options, optionCallback);
 
@@ -73,6 +74,7 @@ window.onload = function()
 			dialoguesList[nodeID].id,
 			dialoguesList[nodeID].sender,
 			dialoguesList[nodeID].content, 
+			dialoguesList[nodeID].displayType,
 			dialoguesList[nodeID].options
 			);
 	}
