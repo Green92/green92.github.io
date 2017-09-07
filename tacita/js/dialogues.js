@@ -129,7 +129,7 @@ var dialoguesList =
 	{
 		"id" : 13,
 		"sender" : "Tacita",
-		"content" : "(Subject -> RE: incident proche ) \n\nBonjour citoyen, \nUn individu contestataire est présent près de vous. Veuillez nous signaler tout comportement anormal via l’application “MyTacita” si vous en rencontrez. \nMerci de votre coopération et de votre compréhension. \n\nN’oubliez pas ! Le futur nous appartient.","
+		"content" : "(Subject -> RE: incident proche ) \n\nBonjour citoyen, \nUn individu contestataire est présent près de vous. Veuillez nous signaler tout comportement anormal via l’application “MyTacita” si vous en rencontrez. \nMerci de votre coopération et de votre compréhension. \n\nN’oubliez pas ! Le futur nous appartient.",
 		"displayType" : 3,
 		"options" : [
 			{ "nodeId" : 14, "textToDisplay" : "Fermer" }
@@ -151,7 +151,7 @@ var dialoguesList =
 	{
 		"id" : 15,
 		"sender" : "Octave",
-		"content" :"Qu’est-ce que tu fais ? C’est toi qu’il cherchent, gamin !"
+		"content" :"Qu’est-ce que tu fais ? C’est toi qu’il cherchent, gamin !",
 		"displayType" : 1,
 		"options" : [
 			{ "nodeId" : 16, "textToDisplay" : "Continuer" }

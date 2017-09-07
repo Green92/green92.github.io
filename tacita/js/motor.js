@@ -5,6 +5,8 @@
 window.onload = function() 
 {
 	var hasMessageToDisplay = true;
+	var nodeID = 0;
+	var isGameFinished = false;
 
 	var Message = function(id, sender, content, displayType, options) 
 	{		
@@ -22,45 +24,25 @@ window.onload = function()
 	// Main function to run the game
 	function game()
 	{
-		var isGameFinished = false;
-		var nodeID = 0;
 
-		//loadJSONfile();
+		//while(!isGameFinished)
+		//{
 
-		while(!isGameFinished)
+		setInterval(function() 
 		{
-
-			if (hasMessageToDisplay)
+			if (!isGameFinished && hasMessageToDisplay)
 			{
 				var message = getMessage(nodeID);
 
-				//ui.postMessage(message.sender, message.content);
-
-				// TEST
-					document.getElementById("sender").innerHTML = message.sender;
-					document.getElementById("content").innerHTML = message.content ;
-					document.getElementById("options").innerHTML = message.options[0].textToDisplay + "<br/>" + ((message.length > 1 ) ? message.options[1].textToDisplay : "");
-
-				//ui.createOptions(message.options, optionCallback);
+				UI.postMessage(message);
+				UI.createOptions(message, optionCallback);
 
 				hasMessageToDisplay = false;
-
-				isGameFinished = true;
 			}
-		}
-	}
 
+		}, 500);
 
-
-	// To load all messages from the JSON file "dialogues.json"
-	function loadJSONfile () 
-	{
-
-		alert("Loading JSON file");
-
-		//dialoguesList = JSON.parse("dialoguesList");
-
-		alert("JSON file loaded");
+		//}
 	}
 
 
@@ -68,7 +50,10 @@ window.onload = function()
 	function getMessage (nodeID)
 	{
 		if (nodeID >= dialoguesList.length)
+		{
+			isGameFinished = true;
 			alert ("Impossible to get message with ID : " + nodeID);
+		}
 
 		return new Message(
 			dialoguesList[nodeID].id,
@@ -81,9 +66,9 @@ window.onload = function()
 
 
 	// Callback when there is a click on one of the options
-	function optionCallback(optionId) 
+	function optionCallback(nextNodeId) 
 	{
-		nodeID = optionId;
+		nodeID = nextNodeId;
 		hasMessageToDisplay = true;
 	}
 
