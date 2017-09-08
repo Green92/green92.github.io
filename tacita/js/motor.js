@@ -5,8 +5,9 @@
 window.onload = function() 
 {
 	var hasMessageToDisplay = true;
-	var nodeID = 0;
+	var nodeID = 7;
 	var isGameFinished = false;
+	var alreadyDisplayedNodes = new Array();
 
 	var Message = function(id, sender, content, displayType, options) 
 	{		
@@ -68,7 +69,15 @@ window.onload = function()
 	// Callback when there is a click on one of the options
 	function optionCallback(nextNodeId) 
 	{
+		// Do not display two time a same message
+		for(var i=0; i< alreadyDisplayedNodes.length; i++)
+		{
+			if (alreadyDisplayedNodes[i] == nextNodeId)
+				return;
+		}
+
 		nodeID = nextNodeId;
+		alreadyDisplayedNodes[alreadyDisplayedNodes.length] = nextNodeId;
 		hasMessageToDisplay = true;
 	}
 
