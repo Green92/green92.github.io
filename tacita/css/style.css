@@ -1,0 +1,295 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width:100%;
+	height:100%;
+	margin:auto;
+	font-family: 'Titillium Web', sans-serif;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+/* CODE RELATIF AU TOUCH-SLIDE JS */
+
+.slider{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: inline-block;
+}
+.slider .content{
+	position: relative;
+}
+.page {
+	width: 100vw;
+	box-shadow: inset 0 0 6px 0 rgba(0,0,0,0.4);
+}
+
+
+
+
+
+
+
+
+#storyscreen{
+	height: 100vh;
+	width: 100vw;
+	float: left;
+	background: url("../media/wp-ss.jpg");
+	background-size:cover;
+	overflow-y:auto;
+}
+#homescreen{
+	height: 100vh;
+	width: 100vw;
+	background: url("../media/wp-hs.jpg");
+	background-size:cover;
+	float: left;
+}
+.bloc-narration{
+	border-radius: 20px;
+	width: calc(90% - 40px);
+	padding: 15px 20px;
+	background: #ededed;
+	color:rgb(20,20,20);
+	margin: 30px auto;
+	font-size: 0.9rem;
+}
+.top-bar{
+	width: 100%;
+	height: 6vh;
+	line-height: 6vh;
+	background: #eaeaea;
+	color: #969696;
+}
+.top-bar>p{
+	float: left;
+	margin-left: 10px;
+}
+.top-bar>div{
+	float: right;
+}
+.top-bar>div>p{
+	display: inline;
+}
+.top-bar>div>img{
+	height: 2vh;
+	margin: 0 10px; 
+}
+.desktop{
+	width: 100%;
+	height:76vh;
+}
+.flash-info{
+	width: 90%;
+	height: 70px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 5%;
+	margin-top: calc((76vh - 280px)/5);
+	background: #30739c;
+	background: -moz-linear-gradient(top, #30739c 0%, #305268 100%);
+	background: -webkit-linear-gradient(top, #30739c 0%,#305268 100%);
+	background: linear-gradient(to bottom, #30739c 0%,#305268 100%);
+	overflow: hidden;
+}
+.flash-info img{
+	display: block;
+	width:70px;
+	float: left;
+}
+.flash-info p{
+	display: block;
+	width: calc(100% - 75px);
+	float: right;
+	height:60px;
+	padding:5px 0;
+	color: #ededed;
+	margin-right: 5px;
+}
+.app{
+	width: 70px;
+	height: 70px;
+	border-radius: 20px;
+	background: yellow;
+	float: left;
+	margin-left: calc((100vw - 280px)/5);
+	margin-top: calc((76vh - 280px)/5);
+}
+.app>a, .dockapp>a{
+	display: block;
+	width: 100%;
+	height:100%;
+	text-decoration: none;
+}
+.app>p, .dockapp>p{
+	text-align: center;
+	color: #ededed;
+	font-weight: lighter;
+	font-size: 0.8rem;
+	margin-top: 2px;
+	text-shadow:0 1px rgba(0,0,0,0.3);
+}
+.dock{
+	float: none;
+	width: 100%;
+	height: 18vh;
+	background: rgba(60,60,60,0.80);
+}
+.dockapp{
+	width: 70px;
+	height: 70px;
+	border-radius: 20px;
+	background: yellow;
+	float: left;
+	margin-left: calc((100vw - 280px)/5);
+	margin-top: calc(9vh - 42px);
+}
+
+.app1{
+	background: url("../media/app-pho.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app2{
+	background: url("../media/app-not.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app3{
+	background: url("../media/app-mes.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app4{
+	background: url("../media/app-tac.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app5{
+	background: url("../media/app-now.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app6{
+	background: url("../media/app-sup.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app7{
+	background: url("../media/app-res.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app8{
+	background: url("../media/app-reg.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app9{
+	background: url("../media/app-loc.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app10{
+	background: url("../media/app-mik.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app11{
+	background: url("../media/app-ema.png") no-repeat;
+	background-size: 100% 100%;
+}
+.app12{
+	background: url("../media/app-met.png") no-repeat;
+	background-size: 100% 100%;
+}
+.dockapp1{
+	background: url("../media/app-int.png") no-repeat;
+	background-size: 100% 100%;
+}
+.dockapp2{
+	background: url("../media/app-cal.png") no-repeat;
+	background-size: 100% 100%;
+}
+.dockapp3{
+	background: url("../media/app-gps.png") no-repeat;
+	background-size: 100% 100%;
+}
+.dockapp4{
+	background: url("../media/app-sto.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* APPLICATIONS */
+
+.inapp{
+	width: 100%;
+	height: 94vh;
+	background: #eaeaea;
+	color: #969696;
+}
+.inapp .bouton-retour-accueil{
+	font-size: 1rem;
+	position: relative;
+	left: 20px;
+	top: 5px;
+	padding:5px 10px;
+	outline: none;
+	text-decoration: none;
+	border-radius: 4px;
+	color:rgb(150,150,150);
+	background-color: rgba(0,0,0,0.05);
+}
+.inapp h3{
+	text-align: center;
+	padding:5px 0 25px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	font-style: italic;
+	box-shadow: 0 6px 6px 1px rgba(0,0,0,0.1);
+	margin-bottom:30px;
+}
+
+/* APPLICATION WEB BROWSER */
+
+.app-internet>.contenu-app{
+	margin:auto;
+	padding-top: 20vh;
+	width:70%;
+}
+.app-internet>.contenu-app>img:first-child{
+	display: block;
+	margin:auto;
+	width: 70%;
+}
+.app-internet>.contenu-app input{
+	display: block;
+	width: calc(100% - 60px);
+	margin: auto;
+	padding:10px 40px 10px 20px;
+	border:none;
+	background: #fff url("../media/loupe.png") no-repeat;
+	background-size: 20px 20px;
+	background-position: calc(100% - 12px) 10px;
+	margin-top: 20px;
+	outline: none;
+	border-radius: 99em;
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+	font-size: 1rem;
+}
+.app-internet>.contenu-app img:last-of-type{
+	display: block;
+	margin:20px auto 5px;
+	width:20px;
+}
+.app-internet>.contenu-app p:last-child{
+	vertical-align: top;
+	font-size: 0.7rem;
+}
+
+
+/* APPLICATION MESSAGES */
+
+.app-messages .contenu-app{
+	margin-top:20px;
+}
+.resume-conv{
+	width: 100%;
+}
+.resume-conv a{
+	margin-bottom:5px;
+}

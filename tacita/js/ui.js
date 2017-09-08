@@ -33,8 +33,7 @@ class UI
 			{						
 				parentMessageTag = document.getElementById(message.id);
 				parentMessageTag.appendChild(document.createElement("br"));
-				parentMessageTag.appendChild(document.createElement("br"));
-				
+				parentMessageTag.appendChild(document.createElement("br"));		
 				linkTag = document.createElement("div");
 				linkTag.className = "optionlink";
 			}

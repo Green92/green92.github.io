@@ -455,8 +455,8 @@ var dialoguesList =
 		"content" : "Que faire maintenant ?",
 		"displayType" : 2,
 		"options" : [
-			{ "nodeId" : 0, "textToDisplay" : "Il faut que l’on quitte cette ville, c’est trop dangereux de rester ici" },
-			{ "nodeId" : 0, "textToDisplay" : "Il vaut mieux resté caché dans les environs, je connais bien la ville" }
+			{ "nodeId" : 999, "textToDisplay" : "Il faut que l’on quitte cette ville, c’est trop dangereux de rester ici" },
+			{ "nodeId" : 999, "textToDisplay" : "Il vaut mieux resté caché dans les environs, je connais bien la ville" }
 		]
 	},
 
@@ -506,8 +506,8 @@ var dialoguesList =
 		"content" : "Je ne dois pas le regarder. Ils vont me repérer. C’est trop tard maintenant, il a parlé. Comment est-ce possible ? Peu importe. C’est trop tard pour lui, mais pas pour moi. Je dois filer d’ici.",
 		"displayType" : 2,
 		"options" : [
-			{ "nodeId" : 50, "textToDisplay" : "Que faire ? C’est déjà terminé. Ils l'emmènent Dieu sait où. Je dois oublier tout ça." },		
-			{ "nodeId" : 0, "textToDisplay" : "Il doit y avoir un moyen de le sortir de là. Je ne peux pas rester sans rien faire." }
+			{ "nodeId" : 58, "textToDisplay" : "Que faire ? C’est déjà terminé. Ils l'emmènent Dieu sait où. Je dois oublier tout ça." },		
+			{ "nodeId" : 50, "textToDisplay" : "Il doit y avoir un moyen de le sortir de là. Je ne peux pas rester sans rien faire." }
 		]
 	},
 

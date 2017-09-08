@@ -5,7 +5,7 @@
 window.onload = function() 
 {
 	var hasMessageToDisplay = true;
-	var nodeID = 7;
+	var nodeID = 0;
 	var isGameFinished = false;
 	var alreadyDisplayedNodes = new Array();
 
@@ -25,9 +25,7 @@ window.onload = function()
 	// Main function to run the game
 	function game()
 	{
-
-		//while(!isGameFinished)
-		//{
+		nodeID = document.cookie.split("=") != "" ? document.cookie.split("=")[1] : 0;
 
 		setInterval(function() 
 		{
@@ -41,7 +39,7 @@ window.onload = function()
 				hasMessageToDisplay = false;
 			}
 
-		}, 500);
+		}, 100);
 
 		//}
 	}
@@ -72,7 +70,7 @@ window.onload = function()
 		// Fin 
 		if(nextNodeId == 999)
 		{
-			alert("L'histoire est terminée.");
+			alert("L'histoire est terminée.\n\n Astuce : redémarrer le navigateur pour recommencer une partie.");
 			isGameFinished = true;
 		}
 
@@ -84,6 +82,7 @@ window.onload = function()
 		}
 
 		nodeID = nextNodeId;
+		document.cookie = "nextNodeId="+nextNodeId;
 		alreadyDisplayedNodes[alreadyDisplayedNodes.length] = nextNodeId;
 		hasMessageToDisplay = true;
 	}
