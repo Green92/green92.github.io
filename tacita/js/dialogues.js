@@ -80,7 +80,7 @@ var dialoguesList =
 		"content" : "L’enfant porta une main à sa bouche, probablement conscient de l’erreur commise, mais sûrement inconscient des conséquences. Sous le règne de Tacita, le silence est d’or. Leurs regards se croisèrent, et ils échangèrent une expression fugace de terreur.",
 		"displayType" : 0,
 		"options" : [
-			{ "nodeId" : 1, "textToDisplay" : "Peu importe qui est cet enfant, ils ne doivent pas le trouver." },
+			{ "nodeId" : 45, "textToDisplay" : "Peu importe qui est cet enfant, ils ne doivent pas le trouver." },
 			{ "nodeId" : 8, "textToDisplay" : "Si je reste ici, je vais avoir des ennuis. De gros ennuis. Je dois partir, et tout de suite." }
 		]
 	},
@@ -458,5 +458,418 @@ var dialoguesList =
 			{ "nodeId" : 0, "textToDisplay" : "Il faut que l’on quitte cette ville, c’est trop dangereux de rester ici" },
 			{ "nodeId" : 0, "textToDisplay" : "Il vaut mieux resté caché dans les environs, je connais bien la ville" }
 		]
-	}
+	},
+
+	{
+		"id" : 45,
+		"sender" : "Tacita",
+		"content" : "Bonjour, citoyens. Veuillez rapporter la nature et le lieu de l’incident aux agents à proximité dans le calme et la discipline. Merci d’avance ! \n\nSouvenez-vous, l’avenir nous appartient.\nTacita",
+		"displayType" : 3,
+		"options" : [
+			{ "nodeId" : 46, "textToDisplay" : "Fermer" }
+		]
+	},
+
+	{
+		"id" : 46,
+		"sender" : "SYSTEM",
+		"content" : "L’annonce correspondait, avec une précision d’horloge, à l’arrivée sur les lieux d’une escouade d’agents de Tacita, drapés de leur uniforme rouge et noir caractéristique. L’habit représentait la force et la rapidité avec lesquelles Tacita réglait les problèmes de dissidence et d’anomalie comportementale.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 47, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 47,
+		"sender" : "OCTAVE",
+		"content" : "Ce n’est pas bon… Si je reste ici, ils vont m'interroger, et je n’en ai aucune envie… Ils sont capables de fouiller mes données et de trouver un prétexte pour… Pour…",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 48, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 48,
+		"sender" : "SYSTEM",
+		"content" : "En quelques instants, la situation dégénéra. Il suffit d’une ou deux personnes montrant du doigt l’enfant alors qu’ils étaient interrogés, un accès rapide des agents aux données audio des caméras de surveillance, et voilà une main de fer qui se referme sur un bras d’enfant. Celui-ci, tournant son regard apeuré vers Octave, lance un cri : “A l’aide !”.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 49, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 49,
+		"sender" : "OCTAVE",
+		"content" : "Je ne dois pas le regarder. Ils vont me repérer. C’est trop tard maintenant, il a parlé. Comment est-ce possible ? Peu importe. C’est trop tard pour lui, mais pas pour moi. Je dois filer d’ici.",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 50, "textToDisplay" : "Que faire ? C’est déjà terminé. Ils l'emmènent Dieu sait où. Je dois oublier tout ça." },		
+			{ "nodeId" : 0, "textToDisplay" : "Il doit y avoir un moyen de le sortir de là. Je ne peux pas rester sans rien faire." }
+		]
+	},
+
+	{
+		"id" : 50,
+		"sender" : "OCTAVE",
+		"content" : "Qu’est-ce que je suis en train de faire ? Je ne peux pas laisser faire ça. Ce n’est qu’un enfant. Il n’a rien à voir avec tout ça. Il ne mérite pas ça. Tant pis pour mon idée de faire profil bas, je dois agir.",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 51, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 51,
+		"sender" : "SYSTEM",
+		"content" : "Tournant les talons, Octave se mit à marcher de plus en plus rapidement vers les deux agents qui tenaient l’enfant et tentaient de comprendre la situation. Une chance pour eux, la plupart des autres agents étaient répartis dans la zone afin d'interroger les citoyens “volontaires”.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 52, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 52,
+		"sender" : "Agent NX551",
+		"content" : "Bonjour, citoyen.\nVeuillez rester calme.\n\nNous demandons votre coopération.",
+		"displayType" : 1,
+		"options" : [
+			{ "nodeId" : 53, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 53,
+		"sender" : "SYSTEM",
+		"content" : "Mais l’agent n’eut pas le temps de terminer sa communication numérique avec Octave. Il fut mis à terre d’une droite parfaitement préparée d’Octave. Des années de service sans incident auprès de Tacita avaient effacé les réflexes du soldat.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 54, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 54,
+		"sender" : "SYSTEM",
+		"content" : "De la même manière, le second agent lâcha prise du poignet de l’enfant, pris par la surprise. Il esquissa un geste pour se protéger mais il était trop tard, lui aussi se retrouva mis à terre par un coup puissant.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 55, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 55,
+		"sender" : "Octave",
+		"content" : "Viens, suis-moi, cours aussi vite que tu peux !",
+		"displayType" : 1,
+		"options" : [
+			{ "nodeId" : 56, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 56,
+		"sender" : "SYSTEM",
+		"content" : "Les coups d’Octave n’étaient évidemment pas assez forts pour assommer les deux hommes, mais leur surprise alliée au fait qu’ils allaient devoir se relever lui permirent de prendre un peu d’avance. Il courrait en tenant l’enfant par le poignet, se retournant régulièrement pour vérifier qu’il suivait le rythme.\nIl tenta de semer ses poursuivants en multipliant les détours et les virages, choisissant à chaque croisement les allées les plus bondées ou les ruelles les plus tortueuses.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 57, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 57,
+		"sender" : "Octave",
+		"content" : "Par ici ! Nous devons rapidement trouver un endroit où se cacher, avant qu’ils ne reviennent… Ils n’abandonneront pas tant que nous ne les aurons pas semés pour de bon !",
+		"displayType" : 1,
+		"options" : [
+			{ "nodeId" : 27, "textToDisplay" : "Chercher une cachette dans la ruelle." }
+		]
+	},
+
+	{
+		"id" : 58,
+		"sender" : "SYSTEM",
+		"content" : "Octave se remit en marche, comme une machine continuant sa procédure. Mais l’Homme est fait de telle sorte que les réflexions courent constamment. Il ne se rappela pas du reste de cette journée, la mémoire occupée par le regard de cet enfant, qui lui revenait sans cesse. Sans pouvoir identifier la cause, il se sentait écrasé, compressé dans une machinerie. Octave soupçonnait que l’arrestation de cet enfant trahissait de sombres failles de la société dans laquelle il évoluait, sans pour autant pouvoir les comprendre.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 59, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 59,
+		"sender" : "SYSTEM",
+		"content" : "Quelques jours plus tard, il était las de voir revenir encore et toujours les images de l’enfant capturé, et surtout d’entendre son cri au moment de la bousculade, si surprenant. Il s’affala dans son canapé.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 60, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 60,
+		"sender" : "OCTAVE",
+		"content" : "Comment en est-on arrivé là ?",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 61, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 61,
+		"sender" : "OCTAVE",
+		"content" : "Comment a-t-on pu évoluer au point qu’une simple interjection, si innocente, puisse être condamnée à ce point ?",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 62, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 62,
+		"sender" : "OCTAVE",
+		"content" : "Surtout, comment a-t-il pu “parler”, si l’on peut appeler cela ainsi ? Mais ce n’est pas ça le véritable problème au fond …",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 63, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 63,
+		"sender" : "OCTAVE",
+		"content" : "J’aurais peut-être pu intervenir … \n\nPeut-être “dû” intervenir, plutôt ?","
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 64, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 64,
+		"sender" : "OCTAVE",
+		"content" : "Non, cela n’aurait servi à rien, on aurait simplement été deux à être capturés. Je n’ai pas envie de savoir ce qu’ils font aux personnes capturées... Si j’avais voulu faire un acte de rébellion, je l’aurai fait plus jeune, lorsque j’ai perdu mon métier. Cela ne sert plus aujourd’hui …",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 65, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 65,
+		"sender" : "OCTAVE",
+		"content" : "De toute manière, il est trop tard, je ne peux plus rien changer à la situation…",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 66, "textToDisplay" : "Il reste quelque chose à faire" },
+			{ "nodeId" : 72, "textToDisplay" : "Je devrai vivre avec cela" }
+		]
+	},
+
+	{
+		"id" : 66,
+		"sender" : "OCTAVE",
+		"content" : "Il n’y a rien à faire. Je vais devoir me faire à l’idée d’avoir assisté à cette scène sans avoir pu agir.",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 67, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 67,
+		"sender" : "OCTAVE",
+		"content" : "Ce gosse, comme moi, n’avions rien à gagner à ce que j’intervienne. Après tout, un homme ne pourra jamais changer une société à lui tout seul. \nEt puis je ne connais rien de son histoire, peut-être que les autorités avaient leurs raisons de l’arrêter ? Je ne le saurais jamais de toute manière.",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 68, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 68,
+		"sender" : "OCTAVE",
+		"content" : "Pourvu que je me fasse une raison, un jour …",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 69, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 69,
+		"sender" : "OCTAVE",
+		"content" : "Je ne veux plus revivre cette scène ...",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 70, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 70,
+		"sender" : "SYSTEM",
+		"content" : "Octave continua par la suite à se lever, à aller travailler, à rentrer, et ainsi de suite de jour en jour. Le sommeil était souvent agité, mais de nombreuses visions différentes, le ramenant à plusieurs étapes de sa vie, s’étaient immiscées dans ses nuits. \nMais Octave était retourné dans le cycle fermé du quotidien de cette société dirigiste. L’arrestation ne semblait plus être qu’un écart dans la lente procession myrmicéenne de sa vie.\nLes remords étaient toujours là, et ne partiraient sans doute jamais. Mais ils étaient désormais comme une vieille connaissance que l’on croise constamment, et qu’on s’est résigné à supporter.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 71, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 71,
+		"sender" : "SYSTEM",
+		"content" : "De nombreuses années plus tard, l’enfant redevint anonyme à ses yeux.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 999, "textToDisplay" : "FIN" }
+		]
+	},
+
+	{
+		"id" : 72,
+		"sender" : "OCTAVE",
+		"content" : "C’est certain, je peux encore agir, d’une manière ou d’une autre. Cette situation n’est pas normale.\n\nLes bribes d’un temps où l’on échangeait oralement, ou chacun était libre de parler, me reviennent. Je dois rappeler au plus grand nombre cette vérité qu’on a tous oublié.",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 73, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 73,
+		"sender" : "OCTAVE",
+		"content" : "Mais où ? Réfléchis, réfléchis !",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 74, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 74,
+		"sender" : "OCTAVE",
+		"content" : "Je sais ! La place grande place d’Hainsworth, après Novation street. A cette heure-ci, c’est suffisamment bondé de monde pour que mon message soit entendu, et pour que les autorités peinent à m’atteindre.\nC’est décidé, je prends mon matériel et je pars.",
+		"displayType" : 2,
+		"options" : [
+			{ "nodeId" : 75, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 75,
+		"sender" : "SYSTEM",
+		"content" : "Octave arriva sur ladite place, tirant ses étranges valises héritées d’un temps révolu. Il se faufila dans la foule, bousculant quelques personnes, sans craindre de réaction. Une fois positionné au centre de la place, plongé dans le flux incessant des corps, il ouvrit ses bagages. Ceux-ci contenait d’anciens amplificateurs, à priori encore fonctionnels, qu’il possédait lorsqu’il était encore chanteur. Il les avait gardés comme souvenir d’une carrière passée, sans soupçonner qu’ils prendraient un sens si fort, autant d’années après.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 76, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 76,
+		"sender" : "SYSTEM",
+		"content" : "Octave brancha les amplificateurs sur les dalles de recharges disséminées sur le sol. Il savait qu’il avait sûrement déjà attiré l’attention de Tacita, mais cela ne lui mettait aucune pression. Il avait pris sa décision, et il en tirait une attitude calme et déterminée. L’homme galvanisé pris ensuite son micro à pleine mains, et commença son discours :",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 77, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 77,
+		"sender" : "SYSTEM",
+		"content" : "  - Hommes ! Femmes ! Ôtez vos transmetteurs, et écoutez-moi ! Comme moi, prenez un instant pour observer la société dans laquelle nous vivons ! Regardez ce que nous sommes devenus ! Vous exécutez vos tâches assignées et vivez vos vies comme des machines! Cela vous convient-il vraiment ? Cela vous suffit-il ? Ne vous souvenez-vous donc pas de ce temps où l’on échangeait librement dans la rue, sans transcripteur, sans messagerie ? De ce temps où nous nous exprimions au travers du langage corporel et d’expressions sincères, loin de ces insipides émoticônes? Où donc ...",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 78, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 78,
+		"sender" : "SYSTEM",
+		"content" : "Octave eut les mots coupés quelques secondes, en voyant l'uniforme rouge des hommes de Tacita dans la foule compacte, de toutes parts. Telle une image subliminale, Il revit l’enfant, emporté en silence. Un nouvelle injection d’adrénaline. Il respira une grande bouffée d’air et reprit, plus déterminé qu'auparavant.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 79, "textToDisplay" : "Continuer, coûte que coûte" }
+		]
+	},
+
+	{
+		"id" : 79,
+		"sender" : "SYSTEM",
+		"content" : "  - La semaine dernière, j’ai bousculé un enfant, et l’ai entendu pousser un cri. Ce qui me semblait être un réflexe, est devenu un fait hors-norme. L’instant d’après, j’ai vu de mes propres yeux les autorités du - ô grand, ô puissant - Tacita  débarquer, et l’emporter sous mes yeux. Je suis resté impuissant, comme vous l’auriez tous été.\nMais je sais, au plus profond de moi …",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 80, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 80,
+		"sender" : "SYSTEM",
+		"content" : "Le rouge et le noir des combinaisons uniformes se rapprochaient peu à peu. Des hommes et des femmes tombaient, poussés, poussant involontairement quelques gémissements étouffés pour certains. L’un des gardes arrivait presque à Octave, autour duquel la foule s’était écartée. Alors qu’il s'apprêtait à reprendre son discours, il fut surpris d’entendre une, puis plusieurs voix fébriles d’hommes confirmer ce qu’il venait de proclamer.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 81, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 81,
+		"sender" : "SYSTEM",
+		"content" : "  - Oui, je suis convaincu que cette situation n’est pas normale, qu’un enfant devrait pouvoir crier, dire ce qui lui passe par la tête, chanter ! Il faut que cela chan …",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 82, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 82,
+		"sender" : "SYSTEM",
+		"content" : "Il se stoppa net, surpris, comme si ses cordes vocales avaient été subitement coupées. Il eut le temps de voir l’un des hommes de Tacita, au bord droit du cercle qui se dessinait autour de lui, une arme fumante pointée vers lui. Son visage lui paraissait si anonyme, si sentencieux, sans remords, sans expression.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 83, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 83,
+		"sender" : "SYSTEM",
+		"content" : "  - Je ... Je ...",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 84, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 84,
+		"sender" : "SYSTEM",
+		"content" : "Trois autres coups de feu étouffés se firent entendre. Octave était désormais entouré d’une dizaine d’hommes de Tacita. Il tomba alors de son estrade improvisée, incapable d’ajouter un mot. Après quelques secondes de silence, pendant lesquelles Octave vit des flash de sa vie, de son dernier concert aux visages de ces personnes qui l’écoutaient, en passant par le cri de cet enfant, il lâcha le micro dans un abandon naturel.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 85, "textToDisplay" : "Continuer" }
+		]
+	},
+
+	{
+		"id" : 85,
+		"sender" : "SYSTEM",
+		"content" : "Le silence était revenu dans cette société, les rouages de la grande machinerie repartant de nouveau. Mais Octave avait laissé quelques embryons d’idées dans la plupart des esprits ayant assisté à la scène. Comme des bombes à retardement, chacun commençait à douter, à penser, et à se rappeler comme Octave l’avait fait avant de prendre cette décision. Beaucoup d’entre eux ne passeraient probablement pas à l’acte comme il avait pu le faire, mais des réseaux de communication parallèles existaient. Les gens n’avaient jamais perdu leur capacité à échanger et à se réunir aux moments opportuns. Ce qu’ils devaient retrouver, c’était la remise en cause de la société dans laquelle ils évoluent, et surtout de ses règles. De plus, des rumeurs à propos de personnes engagées dans une révolution silencieuse se faisaient entendre. Un espoir fragile comme une lueur de bougie s’alluma ce jour-là dans le cœur de certaines personnes qui avaient été témoins de la scène.",
+		"displayType" : 0,
+		"options" : [
+			{ "nodeId" : 999, "textToDisplay" : "FIN" }
+		]
+	},
+
 ]

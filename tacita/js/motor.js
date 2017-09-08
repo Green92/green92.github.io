@@ -69,6 +69,13 @@ window.onload = function()
 	// Callback when there is a click on one of the options
 	function optionCallback(nextNodeId) 
 	{
+		// Fin 
+		if(nextNodeId == 999)
+		{
+			alert("L'histoire est terminée.");
+			isGameFinished = true;
+		}
+
 		// Do not display two time a same message
 		for(var i=0; i< alreadyDisplayedNodes.length; i++)
 		{
